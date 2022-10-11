@@ -20,14 +20,6 @@ def list_tables():
   list_table.close()
   return lt
 
-'''
-  c=cnx.cursor()# 4. Luego a partir del objeto 'cnx' que es de la clase 'MySQLConnection' llamamos al método 'cursor'
-  c.execute("show tables")# 5. A partir del objeto 'cursor=c' llamamos al método execute y le pasamos como parámetro 
-                          # un comando SQL, en este caso 'show tables':
-  for tabla in c: #6. Mediante un for podemos ver todas las tablas existentes de la base de datos 'farmacia':         
-      print(tabla)#7. Imprime las tablas de farmacia
-  cnx.close() #8. Cerramos la conexiòn con el Servidor de Mysql
-'''
 
 
 def listarCategorias():
