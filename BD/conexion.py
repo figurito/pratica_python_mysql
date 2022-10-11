@@ -33,3 +33,15 @@ def listarCategorias():
 
 #conectarBD()#10. Invocamos las funciòn para mostrar el resultado final
 listarCategorias()#10. Invocamos las funciòn para mostrar el resultado final
+
+
+def agregarCategorias():
+  ic=conectarBD()
+  cursor1=ic.cursor()
+  sql="insert into categoria(categoria) values (%s)"
+  datos=("producto 1")
+  cursor1.execute(sql, datos)
+  ic.commit()
+  ic.close()
+
+agregarCategorias()
